@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- bootstrap icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Pratik_Resume</title>
+    <style>
+        #navbar{
+            background-color: #1f242d !important;
+            padding: 0 8%;
+        }
+        .navbar-dark .navbar-nav .nav-link{
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            margin-right: 20px;
+            padding-left: 2px;
+        }
+        #searchbox{
+            border: 2px solid;
+        }
+        #searchbutton{
+            color: antiquewhite;
+            background-color: blueviolet;
+        }
+        /* styling od home page started */
+#home{
+    background-color: #1f242d;
+    padding-top: 9%;
+    padding-bottom: 5%;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+#home-text h3{
+     font-weight: 700;
+     font-size: 25px;
+}
+#home-text h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+#home-text p{
+    font-weight: bolder;
+}
+.han .anchor{
+font-size: 20px;
+margin-right: 10px;
+}
+.home-image img{
+    border: 2px solid white;
+    height: 300px;
+    width: 300px;
+}
+@media only screen and (max-width: 769px){
+    #home{
+        padding:20px 20px;
+    }
+}
+/* styling od home page ended */
+/* styling of about page started */
+.about-text .img2{
+width: 300px;
+height: 300px;
+border: 2px solid white;
+}
+#about{
+    background-color:  #1f242d;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.about-text h1{
+    font-weight: bolder;
+    font-size: 35px;
+}
+.about-text h3{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.about-text p{
+    font-weight: bolder;
+    font-size: 10px;
+}
+.read{
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 1rem #0ef;
+    background-color: #0ef;
+    transition: 0.5 ease;
+    border-radius: 25px;
+}
+.read:hover{
+    box-shadow: none;
+}
+@media only screen and (width:375px){
+    #home-text h3{
+text-align:center;
+    }
+    /* #about h1{
+         text-align: center; 
+    }
+    .about-text h3{
+        text-align: center;
+    } */
+    .counter{
+        text-align: center;
+    }
+}
+@media only screen and (width: 540px){
+    #home-text{
+        text-align: center;
+        padding-top: 0%;
+    }
+    .about-text{
+        text-align: center;
+        padding-top: 0%;
+    }
+}
+.about-text{
+    padding-top: 8%;
+}
+@media only screen and (min-width:768px){
+    /* #about p{
+        text-align: right;
+    } */
+}
+/* styling of about page ended */
+/* styling of service section started */
+#service{
+background-color:  #1f242d;
+padding-bottom: 10%;
+/* padding-top: 15%; */
+}
+.icon{
+    font-size: 30px;
+    color: #0ef;
+}
+#service p{
+    color: whitesmoke;
+}
+.cards{
+    border: 2px solid white;
+    border-radius: 25px;
+    margin-right:25px;
+    padding-bottom: 2%;
+    margin-top: 10%;
+    border-color: #0ef;
+}
+.cards:hover{
+    transform: scale(1.1);
+    border-color: #0ef;
+}
+#service h3{
+    color: #0ef;
+}
+
+@media only screen and (max-width: 768px){
+    .cards{
+    padding-bottom: 2%;
+    }
+}
+.cards:hover{
+box-shadow: 10px 10px 5px black;
+}
+/* styling of service section ended */
+/* styling of recent work section started */
+.card2{
+    border: 2px solid white;
+    border-radius: 25px;
+    margin-right: 25px;
+    padding-bottom: 2%;
+margin-top: 10%;
+border-color: #0ef;
+}
+.card2:hover{
+    transform: scale(1.1);
+    border-color: #0ef;
+    transition: 0.5 ease;
+    box-shadow: 10px 10px 5px black;
+}
+#recent{
+    /* padding-top: 12%; */
+    padding-bottom: 10%;
+    background-color:  #1f242d;
+}
+#recent h3{
+    color: #0ef;
+}
+#recent p{
+    color: whitesmoke;
+}
+/* styling of recent work section ended*/
+/* styling of contact section started */
+.anchor1{
+    color:#0ef;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#email{
+    color: aquamarine;
+    /* border-radius: 25px; */
+}
+#call{
+    color: aquamarine;
+    /* border-radius: 25px; */
+} 
+#contact{
+    background-color:  #1f242d;
+    /* padding-top: 10%; */
+    padding-bottom: 8%;
+}
+.placeholder::placeholder{
+    text-align: center;
+    color: #1f242d;
+}
+.placeholder{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#contact h5 a{
+    color: #0ef;
+}
+/* styling of contact section ended */
+    </style>
+  </head>
+  <body>
+    <!-- navbar section started -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://img.icons8.com/?size=512&id=44091&format=png" alt="logo" class="img-fluid bg-light" style="color: blanchedalmond;" width="25px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbox">
+              <button class="btn btn-outline-success" type="submit" id="searchbutton">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section ended -->
+      <!-- home section started -->
+      <div class="conatiner-fluid" id="Home">
+        <div class="row justify-content-center han" id="home">
+        <div class="col-md-5 text-white pt-5" id="home-text">
+            <h3>Hello,it's Me</h3>
+            <h1>Pratik Kuntawar</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br>  Est qui adipisci voluptate nisi sint mollitia laborum odio,quaerat quidem.</p>
+            <a href="#"><i class="bi bi-facebook anchor"></i></a>
+        <a href="#"><i class="bi bi-twitter anchor "></i></a>
+        <a href="#"><i class="bi bi-instagram anchor"></i></a>
+        <a href="#"><i class="bi bi-whatsapp anchor"></i></a>
+        <div>
+            <a href="Pratikkuntawar_resume.pdf" download class="btn btn-primary mt-3 read">Download CV</a>
+        </div>
+        </div>
+        <div class="col-md-5 home-image ">
+            <img src="IMG_20230122_000213.jpg" alt="pratik_image" class="img-fluid rounded-circle d-none d-md-block">
+        </div>
+    </div>
+    </div>
+      <!-- home section ended -->
+      <!-- about section started -->
+     
+<div class="container-fluid" id="About">
+    <div class="row about-text justify-content-center" id="about">
+      <div class="col-md-4 ">
+        <img src="IMG_20230122_000953.jpg" alt="pratik_image" class="img-fluid d-none d-md-block img2 rounded-circle">
+      </div>
+      <div class="col-md-6 col-11 about-text">
+        <h1 class="text-white text-center">About Me</h1>
+        <h3 class="text-white text-center ">Frontend Developer</h3>
+        <p class="text-white  mt-4">I am a second year undergraduate student at ssgmce. in computer science and engineering department.. I was very enthusiastic about the programming .languages, solving problems and nowadays it's become. a part of my daily routine .  Every single day I am trying . to solve new problems and learning new skills . so that I can add new skills in my skill set...</p>
+           <a href="#" class="btn btn-primary mt-3 read ">Read more+</a>
+      </div>
+    </div>
+  </div>
+  <!-- about section ended -->
+  <!-- our services section started -->
+<div class="container-fluid" id="Service">
+    <div class="row justify-content-center" id="service">
+      <div class="col-12 text-dark text-center text-white recent">
+        <h1 id="blog-title">Our Services</h1>
+      </div>
+    <div class="col-md-3 col-8 cards text-center mt-4">
+      <i class="bi bi-code-slash icon"></i>
+      <h3 >Web Development</h3>
+      <p >Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br>  Distinctio ipsa voluptate <br> incidunt doloribus voluptatem <br> laudantium asperiores quaerat <br> nostrum alias.</p>
+      <a href="#" class="btn btn-primary read ">Read more+</a>
+    </div>
+    <div class="col-md-3 col-8 cards text-center mt-4">
+      <i class="bi bi-pencil icon "></i>
+      <h3>UI/UX Design</h3>
+      <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br>  Distinctio ipsa voluptate <br> incidunt doloribus voluptatem <br> laudantium asperiores quaerat <br> nostrum alias.</p>
+      <a href="#" class="btn btn-primary read">Read more+</a>
+    </div>
+    <div class="col-md-3 col-8 cards text-center mt-4">
+      <i class="bi bi-align-middle icon"></i>
+      <h3>Java Development</h3>
+      <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br>  Distinctio ipsa voluptate <br> incidunt doloribus voluptatem <br> laudantium asperiores quaerat <br> nostrum alias.</p>
+      <a href="#" class="btn btn-primary read">Read more+</a>
+    </div>
+  </div>
+  </div>
+    
+  <!-- our services section ended -->
+  <!-- recent work section started -->
+<div class="container-fluid" id="Portfolio">
+    <div class="row justify-content-center" id="recent">
+    <div class="col-12 text-dark text-center text-white recent">
+      <h1 id="blog-title">My Recent Work</h1>
+    </div>
+    <div class="col-md-3 col-8 text-center card2">
+      <i class="bi bi-code-slash icon"></i>
+      <h3>Project_Title</h3>
+      <p>Description of project <br>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br>  Distinctio ipsa voluptate <br> incidunt doloribus voluptatem <br> laudantium asperiores quaerat <br> nostrum alias.</p>
+      <a href="#" class="btn btn-primary read">Click to Vist project</a>
+    </div>
+    <div class="col-md-3 col-8  text-center card2">
+      <i class="bi bi-code-slash icon"></i>
+      <h3>Project_Title</h3>
+      <p>
+        Description of project <br> Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br>  Distinctio ipsa voluptate <br> incidunt doloribus voluptatem <br> laudantium asperiores quaerat <br> nostrum alias.</p>
+        <a href="#" class="btn btn-primary read">Click to Vist project</a>
+    </div>
+    <div class="col-md-3 col-8  text-center card2">
+      <i class="bi bi-code-slash icon"></i>
+      <h3>Project_Title</h3>
+      <p>Description of project <br>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br>  Distinctio ipsa voluptate <br> incidunt doloribus voluptatem <br> laudantium asperiores quaerat <br> nostrum alias.</p>
+      <a href="#" class="btn btn-primary read">Click to Vist project</a>
+    </div>
+  </div>
+  </div>
+  <!-- recent work section closed -->
+  <!-- contact started -->
+<div class="container-fluid" id="Contact">
+    <div class="row justify-content-center" id="contact">
+      <div class="col-12 text-dark text-center text-white recent">
+        <h1 id="blog-title">Contact Me</h1>
+      </div>
+      <div class="col-md-4 text-center ">
+        <div id="email">
+        <i class="bi bi-envelope"></i>
+        <h6>Email</h6>
+        <h5><a href="mailto:kuntawarpratik4@gmail.com">kuntawarpratik4@gmail.com</a></h5>
+      </div>
+      <div id="call">
+        <i class="bi bi-telephone"></i>
+        <h6>Call</h6>
+        <h5><a href="tel:7820881097">(+91)7820881097</a></h5>
+      </div>
+        <a href="#"><i class="bi bi-facebook anchor1"></i></a>
+        <a href="#"><i class="bi bi-twitter anchor1 "></i></a>
+        <a href="#"><i class="bi bi-instagram anchor1"></i></a>
+        <a href="#"><i class="bi bi-whatsapp anchor1"></i></a>
+      </div>
+      <div class="col-md-6" id="form">
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlTextarea1"></label>
+            <input type="text" class="form-control border border-primary placeholder" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <label for="exampleFormControlTextarea1"></label>
+            <input type="text" class="form-control border border-primary placeholder" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlTextarea1"></label>
+            <input type="text" class="form-control border border-primary placeholder" placeholder="Mobile Number" aria-label="First name">
+          </div>
+          <div class="col">
+            <label for="exampleFormControlTextarea1"></label>
+            <input type="text" class="form-control border border-primary placeholder" placeholder="Email Subject" aria-label="Last name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control border border-primary placeholder" id="exampleFormControlTextarea1" placeholder="Your Message"  rows="8"></textarea>
+        </div>
+        <a href="#" class="btn btn-primary text-center mt-2 read">Message</a>
+      </div>
+    </div>
+  </div>
+  <!-- contact ended -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
